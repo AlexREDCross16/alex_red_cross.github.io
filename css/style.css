@@ -1,6 +1,10 @@
-html {
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+  html {
     box-sizing: border-box;
   }
+
   /* Тоже самое что и для родителя */
   *, *:after, *:before {
     box-sizing: inherit;
@@ -184,7 +188,7 @@ html {
   
   .about {
     text-align: center;
-    border-bottom: 1px solid #e0e0e0;
+    /*border-bottom: 1px solid #e0e0e0;*/
     padding-bottom: 32px;
     margin-bottom: 40px;
     
@@ -289,4 +293,13 @@ html {
   }
   .level-90:before {
     width: 90%;
+  }
+
+  .logo-font {
+    font-family: 'Bruno Ace', cursive;
+  }
+
+  .contacts-text:hover {
+    color: aquamarine;
+    transition: color 0.5s;
   }
