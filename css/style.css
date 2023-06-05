@@ -208,7 +208,13 @@
     color: #808080;
     margin-bottom: 30px;
   }
-  
+
+  .position-date {
+    display: inline-block;
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #808080;
+  }
   .about-address {
     font-size: 13px;
     margin-bottom: 15px;
@@ -230,7 +236,7 @@
   }
   
   .exp-name {
-    font-size: 14px;
+    font-size: 10px;
     text-transform: uppercase;
   }
   .exp-date {
