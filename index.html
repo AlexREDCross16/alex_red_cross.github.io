@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="css/cssprogress.css">
     <title>ALEX-RED-CROSS</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="divToExport">
         <div class="profile">
-          <div class="profile-photo"></div>
+          <div class="profile-photo"> </div>
           <div class="profile-info">
             <h5 class="heading heading-light">Profile</h5>
           <p class="profile-text">Hello! I’m <span class="logo-font">Alexander Podolnitsky</span>, software developer experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including PHP, JavaScript. I have experience in medical project, financial, high load database and etc.
@@ -29,19 +31,45 @@
               </div>
 
               </div>
-            <h5 class="heading heading-light">Skills</h5>
+            <h5 class="heading">Skills</h5>
+              <div class="cssProgress">
+                  <div class="progress1">
+                      <div class="cssProgress-bar cssProgress-info cssProgress-stripes" data-percent="80" style="width: 80%; ">
+                          <span class="cssProgress-label">PHP</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="cssProgress">
+                  <div class="progress1">
+                      <div class="cssProgress-bar cssProgress-warning cssProgress-stripes progress-bar" data-percent=70 style="width: 75%; ">
+                          <span class="cssProgress-label">Javascript</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="cssProgress">
+                  <div class="progress1">
+                      <div class="cssProgress-bar cssProgress-stripes" data-percent="80" style="width: 80%; ">
+                          <span class="cssProgress-label">Docker</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="cssProgress">
+                  <div class="progress1">
+                      <div class="cssProgress-bar cssProgress-danger cssProgress-stripes" data-percent="80" style="width: 80%; ">
+                          <span class="cssProgress-label">MYSQL</span>
+                      </div>
+                  </div>
+              </div>
 
             </div>
         </div>
         <div class="resume">
           <div class="resume-wrap">
             <div class="logo">
-<!--              <div class="logo-lines logo-lines_left"> </div>-->
-
               <div id="logo-font-span" class="logo-font"> ALEX RED CROSS </div>
-              
-<!--              <div class="logo-lines logo-lines_right"> </div>-->
-              
             </div>
             <div class="about">
               <h1 class="name">Alexander podolnitski</h1>
@@ -49,28 +77,49 @@
 
             </div>
             <div class="experience">
-              <h2 class="heading heading_dark">EXPERIENCE</h2>
+              <h2 class="heading heading_dark">EXPERIENCE <span id="experience-date"></span></h2>
               <ul>
-                <li class="exp"><h4 class="exp-name">Belarussian railway (SCHCH-14)</h4>
+                <li class="exp">
+                    <a href="#ex1" rel="modal:open" class="exp-name">Belarussian railway (SCHCH-14)</a>
+                    <div id="ex1" class="modal">
+                        <p>ЖЕЛЕЗКА</p>
+                    </div>
                   <div class="position-date">Sep 2015 - Dec 2020</div>
-<!--                  <p class="exp-text">Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.</p>-->
                 </li>
                 
-                <li class="exp"><h4 class="exp-name">Isida-informatica</h4>
+                <li class="exp">
+                    <a href="#ex2" rel="modal:open" class="exp-name">Isida-informatica</a>
+                    <div id="ex2" class="modal">
+                        <div>
+                            <div class="modal-list-title">[projects]</div>
+                            <div>- Isida-Retriever;</div>
+                            <div>- Isida-Assessor;</div>
+                            <div class="modal-list-title">[features of the work]</div>
+                            <div>- work with websockets (assessor-chat);</div>
+                            <div>- work with library of documents;</div>
+                            <div> with documents tools;</div>
+                            <div>- work with files converters;</div>
+                            <div>- mediawiki framework;</div>
+                            <div class="modal-list-title">[achievements]</div>
+                            <div>- create documents folder-file drop/down system with Ajax on folder storage;</div>
+                            <div>- create interactive chat with presentation system (extJS);</div>
+                        </div>
+                    </div>
                   <div class="position-date">Dec 2020 - Apr 2022</div>
-<!--                  <p class="exp-text">Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.</p>-->
+
                 </li>
-                <li class="exp"><h3 class="exp-name">ItSupportMe</h3>
+                <li class="exp">
+                    <a href="#ex3" rel="modal:open" class="exp-name">ItSupportMe</a>
+                    <div id="ex3" class="modal">
+
+                    </div>
                   <div class="position-date">Apr 2022 - Dec 2022</div>
-<!--                  <p class="exp-text">Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.</p>-->
                 </li>
                 <li class="exp"><h3 class="exp-name">Webpay</h3>
                   <div class="position-date">Dec 2022 - Jun 2023</div>
-                  <!--                  <p class="exp-text">Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.</p>-->
                 </li>
                 <li class="exp"><h3 class="exp-name">IvaLab</h3>
                   <div class="position-date">Jun 2023 - present</div>
-                  <!--                  <p class="exp-text">Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.</p>-->
                 </li>
               </ul>
             </div>
@@ -94,6 +143,18 @@
           </div>
         </div>
       </div>
+
+
+    <button type="button" onclick="generatePDF()" class="btn-sm btn-danger pull-right">Export to PDF</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
     <script src="js/app.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
 </body>
 </html>
