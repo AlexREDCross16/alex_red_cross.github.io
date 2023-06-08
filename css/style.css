@@ -31,11 +31,12 @@ html {
   text-align: left;
 }
 .profile-photo {
-  height: 230px;
-  background-image: url(https://pp.userapi.com/c848524/v848524843/15df78/kr-ti_e2hcc.jpg);
+  height: 350px;
+  /*background-image: url(https://pp.userapi.com/c848524/v848524843/15df78/kr-ti_e2hcc.jpg);*/
+  background-image: url('/images/avatar.jpeg');
   background-size: 350px;
   /*   border: 2px dashed rgba(90, 90, 90, 255); */
-  background-position: center -30px;
+  /*background-position: center -30px;*/
   border: #39383a 2px solid;
 }
 .profile-text {
