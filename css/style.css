@@ -326,11 +326,55 @@ address {
 .contacts-text {
   display: none;
 }
+.protject-boxes {
+  display: flex;
+}
+
+.box-container {
+  position: relative;
+  display: flex;
+  /*background: #000;*/
+  min-height: 50px;
+  gap: 40px;
+
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  margin-bottom: 10%;
+}
+
+.box-container .box {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #00f376 10%, transparent 10%, transparent 50%, #00f376 50%, #00f376 60%, transparent 60%, transparent 100%);
+  background-size: 15px 15px;
+  /*transform: rotate(calc(var(--i) * 90deg));*/
+  filter: hue-rotate(calc(var(--i) * 100deg));
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 15px;
+  }
+}
+
+.box:hover {
+  opacity: 0.2;
+  transition: 0.2s;
+}
+
+.box-label {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  text-transform: uppercase;
+  justify-content: center;
+  align-content: center;
+  left: 5%;
+  top: 5%;
+}
 
 
-/*.logo-font:hover {*/
-/*  display: none;*/
-/*}*/
-/*.contacts-text:hover {*/
-/*  display: inline;*/
-/*}*/
