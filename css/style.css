@@ -315,20 +315,20 @@ address {
 }
 
 .modal-list-title {
-  color: cornflowerblue;
+  color: #38a3a5;
   font-weight: 700;
+}
+
+.modal-list-role {
+  color: #22577a;
+  font-weight: 700;
+  text-shadow: #38a3a5 0 0 1px;
 }
 
 .experience {
   margin-bottom: 5%;
 }
 
-.contacts-text {
-  display: none;
-}
-.protject-boxes {
-  display: flex;
-}
 
 .box-container {
   position: relative;
